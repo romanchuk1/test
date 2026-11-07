@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f6f7f2"><title>FoodPlanner — питание и покупки</title>
+<style>
+:root{--bg:#f6f7f2;--card:#fff;--ink:#20251f;--muted:#778078;--line:#e7ebe4;--green:#236b45;--soft:#eaf3ec;--orange:#f4a340;--red:#b84a3b}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.wrap{max-width:1000px;margin:auto;padding:18px 16px 90px}.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}.brand{font-weight:850;font-size:23px;letter-spacing:-.8px}.brand span{color:var(--green)}.tag{font-size:11px;color:var(--green);background:var(--soft);padding:7px 10px;border-radius:30px;font-weight:700}.hero{background:#183f2d;color:#fff;border-radius:22px;padding:23px 20px;margin-bottom:16px;position:relative;overflow:hidden}.hero h1{font-size:27px;line-height:1.1;margin:0 0 9px;max-width:560px}.hero p{margin:0;color:#d2e0d5;line-height:1.45;max-width:600px;font-size:13px}.hero .leaf{position:absolute;right:12px;bottom:-27px;font-size:105px;opacity:.17}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.panel{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:16px;margin-bottom:12px}.panel h2{font-size:16px;margin:0 0 13px}.panel h3{font-size:14px;margin:0 0 9px}.field{margin:0 0 12px}.field:last-child{margin-bottom:0}label{display:block;font-size:12px;color:var(--muted);margin-bottom:6px;font-weight:650}input[type=text],input[type=number],select,textarea{width:100%;border:1px solid var(--line);border-radius:11px;background:#fbfcfa;padding:12px;color:var(--ink);outline:none}input:focus,select:focus,textarea:focus{border-color:#72a783}textarea{min-height:68px;resize:vertical}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:9px}.checks{display:flex;flex-wrap:wrap;gap:7px}.chip{border:1px solid var(--line);border-radius:30px;padding:8px 11px;font-size:12px;color:#505950;display:flex;align-items:center;gap:6px}.chip input{accent-color:var(--green);margin:0}.btn{border:0;background:var(--green);color:white;border-radius:12px;padding:13px 16px;font-weight:750;width:100%}.btn.secondary{background:var(--soft);color:var(--green)}.btn.small{width:auto;padding:9px 12px;font-size:12px}.tabs{display:flex;gap:6px;background:#e9ede6;border-radius:13px;padding:4px;margin:14px 0}.tab{flex:1;border:0;background:transparent;padding:10px 5px;border-radius:10px;color:#69736a;font-size:12px;font-weight:750}.tab.active{background:#fff;color:var(--green);box-shadow:0 1px 4px #0000000d}.notice{background:#fff7e9;border:1px solid #f3dfbd;color:#805a22;padding:12px;border-radius:12px;font-size:12px;line-height:1.45;margin:10px 0}.status{display:flex;gap:8px;align-items:flex-start;font-size:12px;color:var(--muted);line-height:1.4}.dot{width:8px;height:8px;border-radius:50%;background:var(--orange);margin-top:4px;flex:none}.day{border:1px solid var(--line);border-radius:14px;padding:13px;margin:10px 0}.dayhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;font-weight:800}.meal{padding:9px 0;border-top:1px solid #f0f2ee;display:flex;justify-content:space-between;gap:10px}.meal:first-of-type{border-top:0}.meal b{font-size:13px}.meal small{display:block;color:var(--muted);font-size:11px;margin-top:3px}.meal em{font-style:normal;color:var(--green);font-size:11px;white-space:nowrap}.product{display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid var(--line);align-items:center}.product:last-child{border:0}.product strong{font-size:13px}.product small{display:block;color:var(--muted);font-size:11px;margin-top:4px}.price{font-weight:800;font-size:13px;text-align:right;white-space:nowrap}.price.na{color:#9aa29a;font-weight:600}.sum{display:flex;justify-content:space-between;font-weight:850;font-size:17px;padding-top:13px}.empty{padding:22px 10px;text-align:center;color:var(--muted);font-size:13px}.hidden{display:none!important}.footer{text-align:center;color:#9aa29a;font-size:11px;padding:20px 0}.pill{font-size:10px;background:#f0f2ee;padding:4px 7px;border-radius:20px;color:#6c756d}.row{display:flex;gap:8px;align-items:center}.row>*{flex:1}.addline{display:flex;gap:7px;margin-top:10px}.addline input{min-width:0}.muted{color:var(--muted)}@media(max-width:650px){.grid{grid-template-columns:1fr}.wrap{padding:13px 12px 80px}.hero{padding:21px 17px}.hero h1{font-size:24px}.panel{padding:14px}.top{margin-bottom:13px}}
+</style>
+</head>
+<body><main class="wrap">
+<header class="top"><div class="brand">food<span>planner</span> 🥬</div><div class="tag">БЕТА · НОВОСИБИРСК</div></header>
+<section class="hero"><h1>Питание на неделю.<br>Покупки без хаоса.</h1><p>Собери меню под свой бюджет, ограничения и привычки. Список покупок будет рассчитан на всех членов семьи.</p><div class="leaf">🥦</div></section>
+<section class="panel"><h2>1. Настройки семьи и магазина</h2>
+<div class="field"><label>Адрес или магазин</label><input id="address" type="text" value="Новосибирск, ул. Беловежская, 4"></div>
+<div class="twocol"><div class="field"><label>Сеть магазинов</label><select id="store"><option>Магнит</option><option>Пятёрочка</option><option>Лента</option><option>Перекрёсток</option><option>Сравнить магазины</option></select></div><div class="field"><label>Количество человек</label><input id="people" type="number" min="1" max="12" value="2"></div></div>
+<div class="twocol"><div class="field"><label>Бюджет на неделю, ₽</label><input id="budget" type="number" min="0" value="8000"></div><div class="field"><label>Сколько готовить?</label><select id="time"><option value="15">До 15 минут</option><option value="30" selected>До 30 минут</option><option value="60">До 60 минут</option><option value="any">Неважно</option></select></div></div>
+<h3>Предпочтения</h3><div class="checks" id="prefs">
+<label class="chip"><input type="checkbox" value="Обычное питание" checked> Обычное</label><label class="chip"><input type="checkbox" value="Больше белка"> Больше белка</label><label class="chip"><input type="checkbox" value="Меньше сладкого"> Меньше сладкого</label><label class="chip"><input type="checkbox" value="Без свинины"> Без свинины</label><label class="chip"><input type="checkbox" value="Вегетарианское"> Вегетарианское</label><label class="chip"><input type="checkbox" value="Экономное"> Экономное</label></div>
+<div class="field" style="margin-top:13px"><label>Аллергии и продукты, которые нельзя</label><input id="allergy" type="text" placeholder="Например: арахис, лактоза, рыба"></div>
+<div class="field"><label>Что не любите / не едите</label><input id="dislikes" type="text" placeholder="Например: грибы, печень, кинза"></div>
+<div class="field"><label>Что уже есть дома (не добавлять в покупки)</label><textarea id="stock" placeholder="Например: рис 1 кг, масло, соль, яйца 4 шт."></textarea></div>
+<button class="btn" id="generate">Составить меню и список покупок</button></section>
+<section class="panel"><h2>2. Проверка цен магазина</h2><div class="status"><span class="dot"></span><span id="priceStatus">Источник цен пока не подключён. Не показываем вымышленные цены и не считаем итог корзины по догадкам.</span></div><div class="notice">Для точных цен нужно подтвердить, что каталог отдаёт цены именно выбранного филиала. Публичный каталог Магнита показывает товары, но сам по себе не доказывает цену в магазине на Беловежской, 4. Офлайн и доставка могут отличаться.</div><button class="btn secondary" id="openCatalog">Открыть официальный каталог Магнита ↗</button><p class="muted" style="font-size:11px;margin:9px 0 0">Откроется сайт магазина в отдельной вкладке. Здесь цены будут отмечены только после получения подтверждённых данных.</p></section>
+<nav class="tabs"><button class="tab active" data-tab="menu">Меню</button><button class="tab" data-tab="list">Покупки</button><button class="tab" data-tab="costs">Бюджет</button></nav>
+<section id="menu" class="panel"><h2>Меню на 7 дней</h2><div id="menuContent" class="empty">Заполни настройки и нажми «Составить меню».</div></section>
+<section id="list" class="panel hidden"><h2>Список покупок</h2><div id="listContent" class="empty">Сначала составь меню.</div><div class="addline"><input id="newProduct" type="text" placeholder="Добавить продукт вручную"><button class="btn small" id="addProduct">Добавить</button></div></section>
+<section id="costs" class="panel hidden"><h2>Расходы и бюджет</h2><div class="empty" id="costContent">Пока нет подтверждённых цен и чеков. Когда появятся реальные цены, здесь будет сравнение с бюджетом.</div></section>
+<div class="footer">FoodPlanner · тестовая версия · цены не подменяются оценочными значениями</div>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+let shopping=[],generated=false;
+const plans=[
+["Овсянка с бананом","Куриный суп с овощами","Гречка с курицей и салатом"],
+["Омлет с овощами","Рис с курицей","Макароны с томатным соусом"],
+["Творог с яблоком","Картофельный суп","Рыба с рисом и овощами"],
+["Каша с яблоком","Гречка с овощами","Куриные котлеты с пюре"],
+["Яйца и тосты","Суп с чечевицей","Рис с овощами и курицей"],
+["Оладьи с творогом","Макароны с курицей","Овощное рагу"],
+["Овсянка с фруктом","Куриный суп","Запечённый картофель с салатом"]
+];
+const ingredients=[
+["Овсяные хлопья","Бананы","Курица","Картофель","Морковь","Лук","Гречка","Рис","Макароны","Яйца","Творог","Яблоки","Рыба","Овощная смесь","Томатная паста","Чечевица","Хлеб","Молоко"],
+["Овсяные хлопья","Бананы","Курица","Картофель","Морковь","Лук","Гречка","Рис","Макароны","Яйца","Творог","Яблоки","Рыба","Овощная смесь","Томатная паста","Чечевица","Хлеб","Молоко"]
+];
+function selectedPrefs(){return [...document.querySelectorAll('#prefs input:checked')].map(x=>x.value)}
+function renderMenu(){
+ const n=Math.max(1,Math.min(12,Number($('people').value)||1)),avoid=($('allergy').value+' '+$('dislikes').value).toLowerCase();
+ const names=['Понедельник','Вторник','Среда','Четверг','Пятница','Суббота','Воскресенье'];
+ $('menuContent').innerHTML=plans.map((day,i)=>'<div class="day"><div class="dayhead"><span>'+names[i]+'</span><span class="pill">день '+(i+1)+'</span></div>'+['Завтрак','Обед','Ужин'].map((m,j)=>'<div class="meal"><div><b>'+m+'</b><small>'+day[j]+'</small></div><em>на '+n+' '+(n===1?'человека':'человек')+'</em></div>').join('')+'</div>').join('');
+ const uniq=[...new Set(plans.flat())];
+ shopping=ingredients[0].map((name,i)=>({name,qty:Math.max(1,Math.ceil(n*(i<3?0.45:i<8?0.35:0.25))),unit:i<3?'кг':'уп./шт.',checked:false})).filter(p=>!avoid.split(/[,;]+/).some(a=>a.trim().length>2&&p.name.toLowerCase().includes(a.trim())));
+ const stock=$('stock').value.toLowerCase();shopping=shopping.filter(p=>!stock.includes(p.name.toLowerCase()));
+ renderList();generated=true;
+ $('costContent').innerHTML='<div class="product"><div><strong>Плановый бюджет</strong><small>Установлен пользователем</small></div><div class="price">'+(Number($('budget').value)||0).toLocaleString('ru-RU')+' ₽</div></div><div class="notice">Итоговая стоимость корзины пока не рассчитана: нет подтверждённых цен выбранного филиала. После подключения источника здесь появится сумма и сравнение с бюджетом.</div><div class="status"><span class="dot"></span><span>Неизвестные цены не заменяются средними или выдуманными.</span></div>';
+}
+function renderList(){
+ $('listContent').innerHTML=shopping.length?shopping.map((p,i)=>'<div class="product"><label class="row" style="margin:0;color:var(--ink);font-size:13px"><input type="checkbox" data-i="'+i+'" '+(p.checked?'checked':'')+' style="accent-color:var(--green)"><span><strong>'+p.name+'</strong><small>'+p.qty+' '+p.unit+'</small></span></label><div class="price na">Цена не<br>проверена</div></div>').join(''):'<div class="empty">Список пуст. Можно добавить продукты вручную ниже.</div>';
+ $('listContent').querySelectorAll('input').forEach(x=>x.addEventListener('change',()=>{shopping[Number(x.dataset.i)].checked=x.checked}));
+}
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===b));['menu','list','costs'].forEach(id=>$(id).classList.toggle('hidden',id!==b.dataset.tab))}));
+$('generate').addEventListener('click',()=>{renderMenu();document.querySelector('[data-tab="menu"]').click();$('menuContent').scrollIntoView({behavior:'smooth',block:'start'})});
+$('addProduct').addEventListener('click',()=>{const v=$('newProduct').value.trim();if(!v)return;shopping.push({name:v,qty:1,unit:'шт.',checked:false});$('newProduct').value='';renderList()});
+$('openCatalog').addEventListener('click',()=>window.open('https://magnit.ru/catalog','_blank','noopener'));
+</script></body></html>
